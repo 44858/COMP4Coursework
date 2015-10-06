@@ -3,7 +3,7 @@
 \section{Introduction}
 
 \subsection{Client Identification}
-My client's name is Lee Travers; he is 45 years old and has almost no experience with computers other than a few very basic tasks. He mainly uses his computer to occasionally send emails. Currently, Lee uses manual paper methods to oversee current items in stock and to control the stock and he uses his HP laptop running Windows 10 to send emails.
+My client's name is Lee asdaxzzc; he is 45 years old and has almost no experience with computers other than a few very basic tasks. He mainly uses his computer to occasionally send emails. Currently, Lee uses manual paper methods to oversee current items in stock and to control the stock and he uses his HP laptop running Windows 10 to send emails.
 
 Lee is a self employed plumber, who runs a Fishing tackle shop on the side. In his shop he sells many products such as fishing rods, bait, fishings reels, line and other necessities for a fishing trip. His shop is located in Sawston and he gets shipments of stock from many big brands. Lee usually runs the shop alone, however he often has assistance from his brother in law or his father in law when he is unable to be in the shop, due to his other job.
 
@@ -24,19 +24,19 @@ There are many problems with this system. First, the book gets incredibly messy 
 \subsection{The current system}
 
 \subsubsection{Data sources and destinations}
+In the current system, there are three data sources that are used, the product, the customer and the supplier. Product tells which products are currently in stock and how much they are being sold for each item. Customer is used when a customer makes a reservation for a product. It tells the details of the customer and which products and how many they want. Supplier is used when stock is running out and has to be replaced. It tells the name of the supplier, the product name, the quantity and price.
 
-\begin{table}[]
-\centering
-\caption{Data Sources and Destinations}
-\label{my-label}
-\begin{tabular}{|l|l|l|l|}
-\hline
- Item Name & Price & Stock \\ \hline
-         &           &              \\ \hline
-         &           &              \\ \hline
-         &           &              \\ \hline
+\begin{center}
+\begin{tabular}{| l | p{5cm} | l | l |}
+    \hline
+    \textbf{Source} & \textbf{Data} & \textbf{Example Data} & \textbf{Destination} \\ \hline
+    Product & Product Name, Price, Quantity & Fishing Rod, £99.99, 10 & Owner \\ \hline
+    Customer & Customer Name,, Telephone No., Product Name, Quanitity & John Smith, 12345678910 & Owner \\ \hline
+    Supplier & Supplier Name, Product Name, Quantity, Price & Nash, Rod, 4, £99.99 & Owner \\ \hline
+  
 \end{tabular}
-\end{table}
+\label{tab:range_examples}
+\end{center}
 
 \subsubsection{Algorithms}
 
