@@ -166,13 +166,24 @@ Product Data Input
 \section{ER Diagrams and Descriptions}
 
 \subsection{ER Diagram}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 10cm, height = 10cm]{Analysis/images/ER_Diagram.JPG}
+	\caption {Entity Relationship Diagram} \label{fig:ER_Diagram}
+\end{figure}
 \subsection{Entity Descriptions}
-Product(\textbf ProductID, ProductName, Brand, Model, Quantity, Price)
+Product(\bf ProductID, ProductName, Brand, Model, Quantity, Price)
+Reservation(\bf CustomerID, \bf Product ID, CustomerName, CustomerTelephone, Quantity)
+StockOrder(\bf ProductID, Brand, CompanyTelephone)
 \section{Object Analysis}
 
-\subsection{Object Listing}
 
+\subsection{Object Listing}
+\begin{itemize}
+	\item Product
+	\item Reservation
+	\item StockOrder
+\end{itemize}
 \subsection{Relationship diagrams}
 
 \subsection{Class definitions}
