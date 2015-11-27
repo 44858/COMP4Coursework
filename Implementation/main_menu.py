@@ -4,6 +4,7 @@ from PyQt4.QtCore import *
 
 class MenuWidget(QWidget):
 	AddPushed = pyqtSignal()
+	ViewPushed = pyqtSignal()
 	def __init__(self):
 		super().__init__()
 		self.addProduct = QPushButton("Add New Product")
@@ -18,6 +19,10 @@ class MenuWidget(QWidget):
 		self.setLayout(self.layout)
 		
 		self.addProduct.clicked.connect(self.add_pushed)
+		self.viewProduct.clicked.connect(self.view_products)
 	
 	def add_pushed(self):
 		self.AddPushed.emit()
+
+	def view_products(self):
+		self.ViewPushed.emit()

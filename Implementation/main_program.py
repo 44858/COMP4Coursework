@@ -4,6 +4,7 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 from main_menu import *
 from add_widget import *
+from view_widget import *
 
 class MainWindow(QMainWindow):
         """"Creates MainWindow"""
@@ -12,23 +13,28 @@ class MainWindow(QMainWindow):
          self.setWindowTitle("Stock Database")
          self.main_menu = MenuWidget()
          self.add_widget = AddWidget()
+         self.view_widget = ViewWidget()
          self.setCentralWidget(self.main_menu)
          self.main_menu.AddPushed.connect(self.add_pressed)
          ##Create Stacked Layout
          self.stack = QStackedLayout()
          self.stack.addWidget(self.main_menu)
          self.stack.addWidget(self.add_widget)
+         self.stack.addWidget(self.view_widget)
          self.widget = QWidget()
          self.widget.setLayout(self.stack)
          self.setCentralWidget(self.widget)
-                
+         ##button presses
+         self.add_widget.BackPushed1.connect(self.back_pressed1)
+         self.main_menu.ViewPushed.connect(self.view_pressed)
+
+
         def add_pressed(self):
                 self.stack.setCurrentIndex(1)
+
+        def view_pressed(self):
+                self.stack.setCurrentIndex(2)
+
+        def back_pressed1(self):
+                self.stack.setCurrentIndex(0)
                 
-        
-
-
-       
-
-if __name__ == "__main__":
-        main()

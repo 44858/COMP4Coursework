@@ -3,6 +3,7 @@ from PyQt4.QtCore import *
 from PyQt4.QtGui import *
 
 class AddWidget(QWidget):
+	BackPushed1 = pyqtSignal()
 	def __init__(self):
 		super().__init__()
 		##Creating Line edits and labels and button
@@ -40,3 +41,9 @@ class AddWidget(QWidget):
 		self.layout.addWidget(self.submit)
 		self.layout.addWidget(self.back)
 		self.setLayout(self.layout)
+
+		#buttons pressed
+		self.back.clicked.connect(self.back_pushed)
+
+	def back_pushed(self):
+		self.BackPushed1.emit()
