@@ -8,18 +8,17 @@
 	\begin{itemize}
 		\item User Interface
 		\item Adding a new product
-		\item Deleting a product
-		\item Searching for Stock
-		\item Displaying information about Stock
+		\item Editing a product
+		\item Viewing information about Stock
 	\end{itemize}
 \end{itemize}
 
 User Interface:
 \begin{itemize}
-	\item Upon launching the program, the user will be presented with an option of 4 buttons. The first button says "Add new Product", the second "Delete a product", the third "Search for a product" and the fourth "Exit"
+	\item Upon launching the program, the user will be presented with an option of 4 buttons. The first button says "Add new Product", the second "Edit a product", the third "View all products" and the fourth "Exit"
 	\item After selecting the "Add new Product" option, the user is taken to a new user interface where they can enter in information about a new product to the database.
-	\item Clicking the "Delete a product" option will present the user with a new user interface where they are able to delete a product from the database.
-	\item Clicking the "Search for a product" option wil present the user with a new user interface where they can search for a product from the database.
+	\item Clicking the "Edit a product" option will present the user with a new user interface where they are able to delete a product from the database.
+	\item Clicking the "View all  products" option wil present the user with a new user interface where they can search for a product from the database.
 	\item Clicking the "Exit" option will close the program.
 \end{itemize}
 Adding a new product:
@@ -29,16 +28,28 @@ Adding a new product:
 	\item When all the information has been entered, the user will be able to click the submit button at the bottom of the page, which will add the information as a new record in the database.
 \end{itemize}
 
-Deleting a product: 
+Editing a product: 
 \begin{itemize}
-	\item After clicking the "Delete a product" button, the user will be taken to a new user interface.
-	\item On this new interface
-\subsection{System flowcharts showing an overview of the complete system}
+	\item After clicking the "Edit a product" button, the user will be taken to a new user interface.
+	\item On this new interface, the user is given an option of choosing a product from the database, and editing its information.
+\end{itemize}
 
+
+Viewing information about stock
+\begin{itemize}
+	\item After clicking the "View all products" button on the main menu, the user is taken to a new user interface.
+	\item On the new interface, the user is presented with a table of all of the products and their information in one table.
+\end{itemize}
+\subsection{System flowcharts showing an overview of the complete system}
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 10cm, height = 15.5cm]{Design/images/design_flow_charts.JPG}
+	\caption {System Flowchart} \label{fig:system_flow_chart}
+\end{figure}
 \section{User Interface Designs}
 
 \section{Hardware Specification}
-
+The systen will be run on a laptop/desktop running Windows 10 and with a 1920x1080 resolution and a 16:10 aspect ratio screen. This is important as I will have to ensure that my program is the correct size for the size of the screen. A keyboard will be required, in order to input information into the database. A mouse will also be required in order to navigate around the program and to select options from the main menu. A display will be used for the output of the of the program. The programs data will be held on the internal hard drive.
 \section{Program Structure}
 
 \subsection{Top-down design structure charts}
