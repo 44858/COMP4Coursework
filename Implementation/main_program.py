@@ -15,7 +15,6 @@ class MainWindow(QMainWindow):
          self.add_widget = AddWidget()
          self.view_widget = ViewWidget()
          self.setCentralWidget(self.main_menu)
-         self.main_menu.AddPushed.connect(self.add_pressed)
          ##Create Stacked Layout
          self.stack = QStackedLayout()
          self.stack.addWidget(self.main_menu)
@@ -27,6 +26,8 @@ class MainWindow(QMainWindow):
          ##button presses
          self.add_widget.BackPushed1.connect(self.back_pressed1)
          self.main_menu.ViewPushed.connect(self.view_pressed)
+         self.main_menu.AddPushed.connect(self.add_pressed)
+         self.view_widget.BackPushed2.connect(self.back_pushed2)
 
 
         def add_pressed(self):
@@ -36,5 +37,8 @@ class MainWindow(QMainWindow):
                 self.stack.setCurrentIndex(2)
 
         def back_pressed1(self):
+                self.stack.setCurrentIndex(0)
+
+        def back_pushed2(self):
                 self.stack.setCurrentIndex(0)
                 

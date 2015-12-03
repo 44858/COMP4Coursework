@@ -29,7 +29,7 @@ class AddWidget(QWidget):
 		self.layout.addWidget(self.label1)
 		self.layout.addWidget(self.product_name)
 		self.layout.addWidget(self.label2)
-		self.layout.addWidget(self.product_id)
+		self.layout.addWidget(self.product_id) 
 		self.layout.addWidget(self.label3)
 		self.layout.addWidget(self.brand)
 		self.layout.addWidget(self.label4)
