@@ -27,7 +27,9 @@ class MainWindow(QMainWindow):
          self.add_widget.BackPushed1.connect(self.back_pressed1)
          self.main_menu.ViewPushed.connect(self.view_pressed)
          self.main_menu.AddPushed.connect(self.add_pressed)
+         self.main_menu.ExitPushed.connect(self.exit_pressed)
          self.view_widget.BackPushed2.connect(self.back_pushed2)
+
 
 
         def add_pressed(self):
@@ -41,4 +43,6 @@ class MainWindow(QMainWindow):
 
         def back_pushed2(self):
                 self.stack.setCurrentIndex(0)
+        def exit_pressed(self):
+                self.close()
                 

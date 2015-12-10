@@ -32,4 +32,6 @@ class Database:
                         cursor.execute("select * from Stock")
                         products = cursor.fetchall()
                         return products
+                        
 g_database = Database("stock_database.db") 
+
