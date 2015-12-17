@@ -9,7 +9,7 @@ class MenuWidget(QWidget):
 	def __init__(self):
 		super().__init__()
 		self.addProduct = QPushButton("Add New Product")
-		self.deleteProduct = QPushButton("Delete Product")
+		self.deleteProduct = QPushButton("Edit Products")
 		self.viewProduct = QPushButton("View all Products")
 		self.exit = QPushButton("Exit Program")
 		self.layout = QVBoxLayout()

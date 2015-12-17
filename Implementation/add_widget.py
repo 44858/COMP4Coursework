@@ -1,9 +1,11 @@
 #ADD PRODUCT WIDGET
 from PyQt4.QtCore import *
 from PyQt4.QtGui import *
+from database_skeleton import *
 
 class AddWidget(QWidget):
 	BackPushed1 = pyqtSignal()
+	SubmitPushed = pyqtSignal()
 	def __init__(self):
 		super().__init__()
 		##Creating Line edits and labels and button
@@ -44,6 +46,10 @@ class AddWidget(QWidget):
 
 		#buttons pressed
 		self.back.clicked.connect(self.back_pushed)
+		self.submit.clicked.connect(self.submit_pushed)
 
 	def back_pushed(self):
 		self.BackPushed1.emit()
+
+	def submit_pushed(self):
+		self.SubmitPushed.emit()

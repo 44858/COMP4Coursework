@@ -1,0 +1,11 @@
+Stuff to do
+
+1. Create UI for for Edit Products
+   - Create Drop down boxes to select product to edit
+   - Create QLineEdits to edit contents of database
+
+2. Link edit products UI to main menu
+   - Create Link to UI
+   - Create Back button
+
+3. Link Database to UI
