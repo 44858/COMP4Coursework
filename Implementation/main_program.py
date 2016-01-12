@@ -24,7 +24,7 @@ class MainWindow(QMainWindow):
          self.widget.setLayout(self.stack)
          self.setCentralWidget(self.widget)
          ##button presses
-         self.add_widget.SubmitPushed.connect(self.submit_pushed)
+         #self.add_widget.SubmitPushed.connect(self.submit_pushed)
          self.add_widget.BackPushed1.connect(self.back_pressed1)
          self.main_menu.ViewPushed.connect(self.view_pressed)
          self.main_menu.AddPushed.connect(self.add_pressed)
@@ -49,7 +49,5 @@ class MainWindow(QMainWindow):
         def exit_pressed(self):
                 self.close()
 
-        def submit_pushed(self):
-                
-
-                
+       # def submit_pushed(self):
+        

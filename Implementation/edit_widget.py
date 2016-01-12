@@ -8,5 +8,6 @@ class EditWidget(QWidget):
 		super().__init__()
 		#create widgets
 		self.title = QLabel("Please choose a product to edit: ")
-		self.
+		self.chooseProduct = QComboBox()
+		
 

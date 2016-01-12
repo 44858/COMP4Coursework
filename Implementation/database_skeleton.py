@@ -20,10 +20,10 @@ class Database:
                         primary key(ProductID))"""
                 self.ExecuteSql(sql)
 
-        def AddNewProduct(self, name):
+        def AddNewProduct(self, name, brand, model, quantity, price):
                 sql = """insert into Stock values
                         ((SELECT max(ProductID) FROM Stock)+1,
-                        '{0}')""".format(name)
+                        '{0}', '{1}', '{2}', {3}, {4})""".format(name, brand, model, quantity, price)
                 self.ExecuteSql(sql)
 
         def GetAllProducts(self):

@@ -61,7 +61,7 @@ The system will be run on a laptop/desktop running Windows 10 and with a 1920x10
 \end{figure}
 
 \subsection{Algorithms in pseudo-code for each data transformation process}
-
+Done in SQL Queries 
 \subsection{Object Diagrams}
 
 \subsection{Class Definitions}
@@ -88,15 +88,39 @@ The system will be run on a laptop/desktop running Windows 10 and with a 1920x10
 \section{Definition of Data Requirements}
 
 \subsection{Identification of all data input items}
-
+\begin{itemize}
+	\item Product Name
+	\item Product ID
+	\item Brand
+	\item Model
+	\item Quantity
+	\item Price
+\end{itemize}
 \subsection{Identification of all data output items}
-
+\begin{itemize}
+	\item Product Records
+Output to Database:
+	\item Product Name
+	\item Product ID
+	\item Brand
+	\item Model
+	\item Quantity
+	\item Price
+\end{itemize}
 \subsection{Explanation of how data output items are generated}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 15cm, height = 6cm]{Design/images/data_outputs.JPG}
+	\caption {Data Output Explanation} \label{fig:data_output_explaination}
+\end{figure}
 \subsection{Data Dictionary}
-
+\begin{figure}[H]
+	\centering
+	\includegraphics[width= 15cm, height = 4cm]{Analysis/images/data_dictionary.JPG}
+	\caption {Data Dictionary} \label{fig:data_dictionary}
+\end{figure}
 \subsection{Identification of appropriate storage media}
-
+Since the program will only be accessed on one computer, the best place for the files of my system to be stored would be on an internal hardrive. The files could also be backed up to a cloud, such as google drive or onto a USB stick.
 \section{Database Design}
 
 \subsection{Normalisation}
@@ -113,8 +137,9 @@ The system will be run on a laptop/desktop running Windows 10 and with a 1920x10
 
 \subsection{Security and Integrity of Data}
 
-\subsection{System Security}
 
+\subsection{System Security}
+I do not plan to add any system security. The laptop itself has a login screen, and any added security to the program will not be necessary since everybody able to login is someone who needs to be able to access the program, so the security already available on the hardware is sufficient. 
 \section{Validation}
 
 \section{Testing}
