@@ -136,7 +136,7 @@ Since the program will only be accessed on one computer, the best place for the 
 \section{Security and Integrity of the System and Data}
 
 \subsection{Security and Integrity of Data}
-
+I am not adding any encryption and the data does not need to be protected.
 
 \subsection{System Security}
 I do not plan to add any system security. The laptop itself has a login screen, and any added security to the program will not be necessary since everybody able to login is someone who needs to be able to access the program, so the security already available on the hardware is sufficient. 
@@ -151,7 +151,8 @@ I do not plan to add any system security. The laptop itself has a login screen, 
     \begin{tabular}{|p{2cm}|p{5cm}|p{5cm}|p{4cm}|}
         \hline
         \textbf{Test Series} & \textbf{Purpose of Test Series} & \textbf{Testing Strategy} & \textbf{Strategy Rationale}\\ \hline
-        Example & Example & Example & Example \\ \hline
+        1 & Testing  Flow of control between user interfaces & Top down testing & \\ \hline
+        2 & Testing validity of user inputs & Bottom Up testing & Each component will be tested once it is developed \\ \hline
     \end{tabular}
 \end{center}
 
@@ -161,7 +162,13 @@ I do not plan to add any system security. The laptop itself has a login screen, 
     \begin{longtable}{|p{1.5cm}|p{2.5cm}|p{2.5cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|p{2cm}|}
         \hline
         \textbf{Test Series} & \textbf{Purpose of Test} & \textbf{Test Description} & \textbf{Test Data} & \textbf{Test Data Type (Normal/ Erroneous/ Boundary)} & \textbf{Expected Result} & \textbf{Actual Result} & \textbf{Evidence}\\ \hline
-        Example & Example & Example & Example & Example & Example & Example & Example \\ \hline
+        1.1 & Test Add New Product Button on the main menu & Should link to add new product window & Click the add New Product Button & Normal & Add new product menu should be displayed &  & \\ \hline 
+        1.2 & Test Edit Product Button on main menu & This should link to a screen where the user can edit a product & Click the Edit Product button & Normal & Edit Product Menu should be displayed & &  \\ \hline
+        1.3 & Test View All Products button on main menu & This should link to a screen displaying all of the products in the database & Click the View All Products button & Normal & The View all products screen should be displayed &  &  \\ \hline
+        1.4 & Test Exit Button & The program should close & Click the Exit button & Normal & The program should close & &  \\ \hline
+        2.1 & Test Validity of input into Product Name & Data should be a String & Enter an integer & erroneous & error message & & \\ \hline
+        2.2 & Test vali
+       
     \end{longtable}
 \end{center}
 \end{landscape}
