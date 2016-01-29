@@ -11,8 +11,6 @@ class AddWidget(QWidget):
 		##Creating Line edits and labels and button
 		self.product_name = QLineEdit()
 		self.label1 = QLabel("Product Name: ")
-		# self.product_id = QLineEdit()
-		# self.label2 = QLabel("Product ID: ")
 		self.brand = QLineEdit()
 		self.label3 = QLabel("Brand: ")
 		self.model = QLineEdit()
@@ -30,8 +28,6 @@ class AddWidget(QWidget):
 		##Adding widgets to layout
 		self.layout.addWidget(self.label1)
 		self.layout.addWidget(self.product_name)
-		# self.layout.addWidget(self.label2)
-		# self.layout.addWidget(self.product_id) 
 		self.layout.addWidget(self.label3)
 		self.layout.addWidget(self.brand)
 		self.layout.addWidget(self.label4)
@@ -55,8 +51,5 @@ class AddWidget(QWidget):
 	def submit_pushed(self):
 		g_database.AddNewProduct(self.product_name.text(), self.brand.text(), self.model.text(), self.quantity.text(), self.price.text())
 		self.BackPushed1.emit()
-		# self.viewProducts = QTableWidget()
-		# self.viewProducts = populateTable()
-
 
 		

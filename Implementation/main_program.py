@@ -27,35 +27,25 @@ class MainWindow(QMainWindow):
          self.widget.setLayout(self.stack)
          self.setCentralWidget(self.widget)
          ##button presses
-         #self.add_widget.SubmitPushed.connect(self.submit_pushed)
          self.add_widget.BackPushed1.connect(self.back_pressed1)
          self.main_menu.ViewPushed.connect(self.view_pressed)
          self.main_menu.EditPushed.connect(self.edit_pressed)
          self.main_menu.AddPushed.connect(self.add_pressed)
          self.main_menu.ExitPushed.connect(self.exit_pressed)
-
-
          self.view_widget.BackPushed2.connect(self.back_pushed2)
-
-
-
 
         def add_pressed(self):
                 self.stack.setCurrentIndex(1)
-
         def view_pressed(self):
+                self.view_widget.populateTable()#calls the populate table function from view_widget
                 self.stack.setCurrentIndex(2)
-
         def back_pressed1(self):
                 self.stack.setCurrentIndex(0)
         def edit_pressed(self):
                 self.stack.setCurrentIndex(3)
-
-
         def back_pushed2(self):
                 self.stack.setCurrentIndex(0)
         def exit_pressed(self):
-                self.close()
+                self.close() #closes the program
 
-       # def submit_pushed(self):
         
