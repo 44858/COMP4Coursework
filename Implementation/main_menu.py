@@ -33,6 +33,6 @@ class MenuWidget(QWidget):
 	def exit_pushed(self):
 		self.ExitPushed.emit()
 	def edit_products(self):
-		self.EditPushed
+		self.EditPushed.emit()
 	def view_products(self):
 		self.ViewPushed.emit()

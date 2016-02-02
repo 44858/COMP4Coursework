@@ -33,6 +33,7 @@ class MainWindow(QMainWindow):
          self.main_menu.AddPushed.connect(self.add_pressed)
          self.main_menu.ExitPushed.connect(self.exit_pressed)
          self.view_widget.BackPushed2.connect(self.back_pushed2)
+         self.edit_widget.BackPushed3.connect(self.back_pushed3)
 
         def add_pressed(self):
                 self.stack.setCurrentIndex(1)
@@ -44,6 +45,8 @@ class MainWindow(QMainWindow):
         def edit_pressed(self):
                 self.stack.setCurrentIndex(3)
         def back_pushed2(self):
+                self.stack.setCurrentIndex(0)
+        def back_pushed3(self):
                 self.stack.setCurrentIndex(0)
         def exit_pressed(self):
                 self.close() #closes the program
